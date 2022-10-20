@@ -19,7 +19,7 @@ function Hero(props) {
             target="_blank"
             rel="noreferrer"
           >
-            Travel Plan
+            {props.buttonText}
           </a>
         </div>
       </div>

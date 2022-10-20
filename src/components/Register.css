@@ -55,9 +55,7 @@ input[type="email"] {
   font-size: 16px;
 }
 ::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #282482;
-  /* opacity: 1;  */
 }
 .register input[type="submit"] {
   border: none;

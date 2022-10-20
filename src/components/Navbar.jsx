@@ -58,7 +58,7 @@ class Navbar extends Component {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Action
+                  Price
                 </a>
               </li>
               <li>
@@ -68,7 +68,7 @@ class Navbar extends Component {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Another action
+                  Promo
                 </a>
               </li>
               <li>
@@ -78,7 +78,7 @@ class Navbar extends Component {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Something else here
+                  Reservation
                 </a>
               </li>
             </ul>

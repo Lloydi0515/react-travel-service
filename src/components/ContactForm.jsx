@@ -7,7 +7,9 @@ const ContactForm = () => {
     Email: "",
     Message: "",
   });
-
+  const onChange = (e) => {
+    setInputs({ ...inputs, [e.target.name]: e.target.value });
+  };
   // deconstructing the  variable from the inputs
   const { Name, Email, Message } = inputs;
 
@@ -28,20 +30,35 @@ const ContactForm = () => {
         }
       );
       const parseRes = await response.json();
+      console.log(parseRes);
 
-      if (parseRes.Email === Email) {
-        return alert("success");
+      if (!parseRes) {
+        return alert("Failed");
+      } else {
+        return alert("Success");
       }
-    } catch (error) {
-      console.log(error.message);
+    } catch (err) {
+      console.log(err);
     }
   };
   return (
     <div className="from-container">
       <h1>Send a message to us!</h1>
       <form onSubmit={onSubmitForm}>
-        <input type="text" id="Name" name="Name" placeholder="Name" />
-        <input type="text" id="email" name="email" placeholder="Email" />
+        <input
+          type="text"
+          id="Name"
+          name="Name"
+          placeholder="Name"
+          onChange={(e) => onChange(e)}
+        />
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="Email"
+          onChange={(e) => onChange(e)}
+        />
         {/* <input type="text" id="subject" name="subject" placeholder="Subject" /> */}
         <textarea
           type="text"
@@ -49,6 +66,7 @@ const ContactForm = () => {
           name="message"
           placeholder="Message"
           rows="4"
+          onChange={(e) => onChange(e)}
         ></textarea>
         <button type="submit">Send Message</button>
       </form>

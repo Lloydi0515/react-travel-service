@@ -33,20 +33,16 @@ const Register = ({ setAuth }) => {
       if (password !== confirm_password) {
         return alert("Password Don't Match");
       }
-      const response = await fetch(
-        "https://sleepearn-server-stack.herokuapp.com/register",
-        {
-          method: "POST",
-          headers: {
-            "Content-type": "application/json",
-          },
-          body: JSON.stringify(body),
-        }
-      );
+      const response = await fetch("https://http://localhost:3000/", {
+        method: "POST",
+        headers: {
+          "Content-type": "application/json",
+        },
+        body: JSON.stringify(body),
+      });
       const parseRes = await response.json();
 
       if (parseRes.token) {
-        // local storage
         localStorage.setItem("token", parseRes.token);
         setAuth(true);
       } else {

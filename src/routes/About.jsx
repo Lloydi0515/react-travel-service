@@ -3,7 +3,6 @@ import Navbar from "../components/Navbar";
 import AboutImg from "../assets/night.jpg";
 import "../components/HeroStyles.css";
 import Footer from "../components/Footer";
-import AboutUs from "../components/AboutUs";
 
 function About() {
   return (

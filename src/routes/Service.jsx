@@ -14,6 +14,7 @@ function Service() {
         title="Service"
         btnClass="hide"
       />
+      <Trip />
       <Footer />
     </>
   );

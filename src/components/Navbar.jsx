@@ -31,11 +31,58 @@ class Navbar extends Component {
               </li>
             );
           })}
-          <button>
+          {/* <button>
             <a href="https://www.ahglab.com" target="_blank" rel="noreferrer">
               Sign Up
             </a>
-          </button>
+          </button> */}
+          <div className="dropdown">
+            <a
+              className="btn btn-info dropdown-toggle text fw-bold"
+              href="https://www.ahglab.com"
+              target="_blank"
+              rel="noreferrer"
+              role="button"
+              id="dropdownMenuLink"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Sign Up
+            </a>
+
+            <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li>
+                <a
+                  className="dropdown-item"
+                  href="https://www.ahglab.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Action
+                </a>
+              </li>
+              <li>
+                <a
+                  className="dropdown-item"
+                  href="https://www.ahglab.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Another action
+                </a>
+              </li>
+              <li>
+                <a
+                  className="dropdown-item"
+                  href="https://www.ahglab.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Something else here
+                </a>
+              </li>
+            </ul>
+          </div>
         </ul>
       </nav>
     );

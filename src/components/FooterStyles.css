@@ -53,4 +53,15 @@
   .bottom div {
     width: 50%;
   }
+  .top {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .bottom {
+    margin-left: 60px;
+  }
 }

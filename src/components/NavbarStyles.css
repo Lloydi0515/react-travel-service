@@ -68,8 +68,8 @@ button:hover {
 .menu-icons {
   display: none;
 }
-.dropdown {
-  color: #01959a !important;
+.dropdown-menu .show {
+  background-color: #01959a;
 }
 
 @media screen and (max-width: 850px) {

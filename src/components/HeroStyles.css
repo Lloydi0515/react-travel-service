@@ -46,7 +46,7 @@ img {
   color: #222;
 }
 .hero-text .show:hover {
-  background-color: aqua;
+  background-color: #01959a;
   color: #fff;
 }
 .hero-text .hide {
